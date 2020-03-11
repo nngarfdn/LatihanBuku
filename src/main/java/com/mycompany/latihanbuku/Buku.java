@@ -34,6 +34,7 @@ public class Buku {
         this.merk = merk;
         this.namaPemilik = null ;
     }
+    
 
     public Buku(String judul, String namaPenulis, int jumlahHalaman, String namaPemilik,  String namaInstansi, String namaPembimbing) {
         this.jumlahHalaman = jumlahHalaman;
@@ -50,6 +51,16 @@ public class Buku {
         this.merk = merk;
         this.harga = harga;
     }
+
+    public Buku(String judul,String namaPenulis,int jumlahHalaman, String namaPemilik,   String namaInstansi) {
+        this.jumlahHalaman = jumlahHalaman;
+        this.namaPemilik = namaPemilik;
+        this.judul = judul;
+        this.namaPenulis = namaPenulis;
+        this.namaInstansi = namaInstansi;
+    }
+    
+    
 
     public int getJumlahHalaman() {
         return jumlahHalaman;
@@ -123,7 +134,4 @@ public class Buku {
         this.harga = harga;
     }
 
-
-    
- 
 }
